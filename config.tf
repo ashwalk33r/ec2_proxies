@@ -15,17 +15,17 @@ variable "PUBLIC_KEY_PATH"  { default = ".ssh/ec2_key.pub" }
 variable "PRIVATE_KEY_PATH" { default = ".ssh/ec2_key" }
 
 # How many proxy servers to create
-variable "AWS_INSTANCES_COUNT"    { default = 5 }
+variable "AWS_INSTANCES_COUNT"    { default = 1 }
 
 # Settings for EC2 instances. It's better to change AWS_INSTANCE_TYPE to
 # `t2.nano` if AWS Free Tier is not available for you
 variable "AWS_INSTANCE_TYPE"      { default = "t2.micro" }
-variable "AWS_DEFAULT_REGION"     { default = "us-east-1" }
-variable "AWS_INSTANCE_AMI"       { default = "ami-a4dc46db" }
+variable "AWS_DEFAULT_REGION"     { default = "eu-central-1" }
+variable "AWS_INSTANCE_AMI"       { default = "ami-0cc0a36f626a4fdf5" }
 variable "AWS_INSTANCE_USER_NAME" { default = "ubuntu" }
 
 # Proxy server type. Available options: `socks` (socks5) and `http` (http/https)
-variable "PROXY_TYPE" { default = "socks" }
+variable "PROXY_TYPE" { default = "http" }
 
 # Proxy server port
 variable "PROXY_PORT" { default = 46642 }
