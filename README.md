@@ -1,3 +1,11 @@
+# Allowed IPs by CIDR
+[https://www.ipaddressguide.com/cidr](https://www.ipaddressguide.com/cidr)
+
+# curl for testing
+```
+curl -sb -H "Accept: application/json" "https://api.ipify.org/" -x http://52.59.187.246:46817
+```
+
 # EC2 Proxies
 
 Read short introduction here: [Create free HTTPS/SOCKS5 proxy servers using AWS Free Tier EC2 instances automatically on demand within Terraform and simple HTTP API](https://victorafanasev.info/tech/create-free-https-socks5-proxy-servers-using-free-ec2-automatically).
