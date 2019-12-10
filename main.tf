@@ -29,7 +29,7 @@ resource "aws_security_group" "ec2_proxies_sg" {
     from_port   = "${var.PROXY_PORT}"
     to_port     = "${var.PROXY_PORT}"
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["${var.ALLOWED_CIDR}"]
   }
 }
 

@@ -28,8 +28,12 @@ variable "AWS_INSTANCE_USER_NAME" { default = "ubuntu" }
 variable "PROXY_TYPE" { default = "http" }
 
 # Proxy server port
-variable "PROXY_PORT" { default = 46642 }
+variable "PROXY_PORT" { default = 46666 }
 
 # Auth for proxy server. None by default
 variable "PROXY_USER"     { default="" }
 variable "PROXY_PASSWORD" { default="" }
+
+# Allowed IPs by CIDR
+# https://www.ipaddressguide.com/cidr
+variable "ALLOWED_CIDR" { default="0.0.0.0/0" }
