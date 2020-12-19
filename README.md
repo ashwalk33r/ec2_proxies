@@ -191,6 +191,17 @@ $ curl -X POST http://localhost:4567/api/v1/destroy
 }
 ```
 
+## Problems
+#### sudo: unable to execute ./setup.sh: No such file or directory
+Following output
+aws_instance.ProxyNode[0] (remote-exec): /home/ubuntu
+aws_instance.ProxyNode[0] (remote-exec): setup.sh
+aws_instance.ProxyNode[0] (remote-exec): sudo: unable to execute ./setup.sh: No such file or directory
+
+Can be fixed with
+`sudo apt-get install dos2unix -y`
+`dos2unix test.sh`
+
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
