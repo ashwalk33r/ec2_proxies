@@ -21,7 +21,7 @@ variable "AWS_INSTANCES_COUNT"    { default = 1 }
 # `t2.nano` if AWS Free Tier is not available for you
 variable "AWS_INSTANCE_TYPE"      { default = "t2.micro" }
 variable "AWS_DEFAULT_REGION"     { default = "eu-central-1" }
-variable "AWS_INSTANCE_AMI"       { default = "ami-0cc0a36f626a4fdf5" }
+variable "AWS_INSTANCE_AMI"       { default = "ami-08a099fcfc36dff3f" }
 variable "AWS_INSTANCE_USER_NAME" { default = "ubuntu" }
 
 # Proxy server type. Available options: `socks` (socks5) and `http` (http/https)

@@ -57,6 +57,8 @@ resource "aws_instance" "ProxyNode" {
 
   provisioner "remote-exec" {
     inline = [
+      "pwd",
+      "ls ./",
       "chmod +x ./setup.sh",
       "sudo ./setup.sh ${var.AWS_INSTANCE_USER_NAME} ${var.PROXY_TYPE} ${var.PROXY_PORT} ${var.PROXY_USER} ${var.PROXY_PASSWORD}",
     ]
