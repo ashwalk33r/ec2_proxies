@@ -19,7 +19,7 @@ variable "AWS_INSTANCES_COUNT"    { default = 1 }
 
 # Settings for EC2 instances. It's better to change AWS_INSTANCE_TYPE to
 # `t2.nano` if AWS Free Tier is not available for you
-variable "AWS_INSTANCE_TYPE"      { default = "t2.micro" }
+variable "AWS_INSTANCE_TYPE"      { default = "t3a.nano" }
 variable "AWS_DEFAULT_REGION"     { default = "eu-central-1" }
 variable "AWS_INSTANCE_AMI"       { default = "ami-08a099fcfc36dff3f" }
 variable "AWS_INSTANCE_USER_NAME" { default = "ubuntu" }
